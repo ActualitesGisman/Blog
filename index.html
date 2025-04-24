@@ -8,59 +8,55 @@
   <style>
     .card {
       background: white;
-      border-radius: 12px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
       overflow: hidden;
-      transition: transform 0.2s ease;
-    }
-    .card:hover {
-      transform: translateY(-4px);
+      width: 250px;
+      flex-shrink: 0;
     }
     .card img {
       width: 100%;
-      height: 160px;
+      height: 140px;
       object-fit: cover;
     }
     .card-body {
       padding: 1rem;
     }
     .card-title {
-      font-size: 1rem;
+      font-size: 0.95rem;
       font-weight: bold;
-      margin-bottom: 0.5rem;
-      color: #003366;
-    }
-    .card-date {
-      font-size: 0.8rem;
-      color: #888;
+      color: #00529b;
       margin-bottom: 0.5rem;
     }
     .card-text {
-      font-size: 0.9rem;
-      color: #444;
+      font-size: 0.85rem;
+      color: #333;
+      margin-bottom: 0.5rem;
+    }
+    .card-date {
+      font-size: 0.75rem;
+      color: #999;
+    }
+    .card-wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1.5rem;
     }
   </style>
 </head>
 <body>
-  <!-- Logo et sélection de langue -->
   <div style="display: flex; justify-content: space-between; align-items: center; padding: 1rem; background: white;">
     <a href="https://www.gisman.fr">
       <img src="assets/gisman_logo.jpg" alt="Logo Gisman" style="height: 60px;">
     </a>
     <div style="display: flex; gap: 1rem;">
-      <a href="index-en.html">
-        <img src="assets/English.jpg" alt="English" style="height: 30px;">
-      </a>
-      <a href="index.html">
-        <img src="assets/Français.jpg" alt="Français" style="height: 30px;">
-      </a>
-      <a href="index-es.html">
-        <img src="assets/Español.jpg" alt="Español" style="height: 30px;">
-      </a>
+      <a href="index-en.html"><img src="assets/English.jpg" alt="English" style="height: 30px;"></a>
+      <a href="index.html"><img src="assets/Français.jpg" alt="Français" style="height: 30px;"></a>
+      <a href="index-es.html"><img src="assets/Español.jpg" alt="Español" style="height: 30px;"></a>
     </div>
   </div>
 
-  <!-- Bannière avec titre -->
   <div style="position: relative; text-align: center;">
     <img src="assets/Actualités_bannière.jpg" alt="Bannière Actualités" style="width: 100%; height: auto; display: block;">
     <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; display: flex; justify-content: center; align-items: center;">
@@ -68,7 +64,6 @@
     </div>
   </div>
 
-  <!-- Texte d’introduction -->
   <section style="max-width: 1000px; margin: 2rem auto; padding: 0 1rem; text-align: center;">
     <h2 style="font-size: 1.5rem; font-weight: bold; margin-bottom: 1rem;">Bienvenue sur le site d’actualités de Gisman.</h2>
     <p style="font-size: 1rem; color: #333; line-height: 1.6;">
@@ -78,23 +73,21 @@
     </p>
   </section>
 
-  <!-- Cartes d'articles -->
-  <main style="padding: 2rem; max-width: 1200px; margin: auto;">
-    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem;">
+  <main style="padding: 2rem;">
+    <div class="card-wrapper">
       <article class="card">
         <a href="fr/securisation-navigation.html">
           <img src="assets/tanger_med_port_entrance.png" alt="Vue aérienne du port de Tanger Med">
           <div class="card-body">
-            <h2 class="card-title">Sécurisation de la navigation</h2>
-            <time class="card-date" datetime="2025-04-23">23 avril 2025</time>
-            <p class="card-text">Un enjeu stratégique pour l'économie maritime. La sécurisation de la navigation contribue à l'attractivité des ports et à la croissance de l'économie bleue...</p>
+            <h2 class="card-title">Sécurisation de la navigation : un levier majeur pour le développement de l'économie bleue et l'attractivité des ports</h2>
+            <p class="card-text">Grâce à une modernisation continue de son balisage, Tanger Med est devenu une référence en matière de sécurité portuaire</p>
+            <div class="card-date">10 avril 2025</div>
           </div>
         </a>
       </article>
     </div>
   </main>
 
-  <!-- Footer -->
   <footer style="text-align: center; padding: 1rem; background: #f5f5f5;">
     <p>&copy; 2025 Gisman - Tous droits réservés</p>
   </footer>
