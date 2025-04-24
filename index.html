@@ -5,29 +5,64 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Actualités Gisman</title>
   <link rel="stylesheet" href="assets/css/style.css">
+  <style>
+    .card {
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      overflow: hidden;
+      transition: transform 0.2s ease;
+    }
+    .card:hover {
+      transform: translateY(-4px);
+    }
+    .card img {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+    }
+    .card-body {
+      padding: 1rem;
+    }
+    .card-title {
+      font-size: 1rem;
+      font-weight: bold;
+      margin-bottom: 0.5rem;
+      color: #003366;
+    }
+    .card-date {
+      font-size: 0.8rem;
+      color: #888;
+      margin-bottom: 0.5rem;
+    }
+    .card-text {
+      font-size: 0.9rem;
+      color: #444;
+    }
+  </style>
 </head>
 <body>
   <!-- Logo et sélection de langue -->
   <div style="display: flex; justify-content: space-between; align-items: center; padding: 1rem; background: white;">
     <a href="https://www.gisman.fr">
-      <img src="assets/gisman_logo.jpg" alt="Logo Gisman" style="height: 60px;">
+      <img src="assets/img/gisman_logo.jpg" alt="Logo Gisman" style="height: 60px;">
     </a>
     <div style="display: flex; gap: 1rem;">
       <a href="index-en.html">
-        <img src="assets/English.jpg" alt="English" style="height: 30px;">
+        <img src="assets/img/English.jpg" alt="English" style="height: 30px;">
       </a>
       <a href="index.html">
-        <img src="assets/Français.jpg" alt="Français" style="height: 30px;">
+        <img src="assets/img/Français.jpg" alt="Français" style="height: 30px;">
       </a>
       <a href="index-es.html">
-        <img src="assets/Español.jpg" alt="Español" style="height: 30px;">
+        <img src="assets/img/Español.jpg" alt="Español" style="height: 30px;">
       </a>
     </div>
   </div>
 
   <!-- Bannière avec titre -->
   <div style="position: relative; text-align: center;">
-    <img src="assets/Actualités_bannière.jpg" alt="Bannière Actualités" style="width: 100%; height: auto; display: block;">
+    <img src="assets/img/Actualites_banniere.jpg" alt="Bannière Actualités" style="width: 100%; height: auto; display: block;">
     <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; display: flex; justify-content: center; align-items: center;">
       <h1 style="color: white; font-size: 3rem; font-weight: bold;">ACTUALITÉS</h1>
     </div>
@@ -43,17 +78,20 @@
     </p>
   </section>
 
-  <!-- Bloc d'article -->
-  <main class="articles-grid" style="padding: 2rem;">
-    <article class="blog-post">
-      <a href="fr/securisation-navigation.html">
-        <img src="assets/tanger_med_port_entrance.png" alt="<img src="assets/tanger_med_port_entrance.png" alt="Bateau naviguant à l’entrée du port de Tanger Med, avec en arrière-plan une jetée et un feu d’entrée." />
-">
-        <h2>Sécurisation de la navigation</h2>
-        <time datetime="2025-04-23">23 avril 2025</time>
-        <p>Un enjeu stratégique pour l'économie maritime. La sécurisation de la navigation contribue à l'attractivité des ports et à la croissance de l'économie bleue...</p>
-      </a>
-    </article>
+  <!-- Cartes d'articles -->
+  <main style="padding: 2rem; max-width: 1200px; margin: auto;">
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem;">
+      <article class="card">
+        <a href="fr/securisation-navigation.html">
+          <img src="assets/tanger_med_port_entrance.png" alt="Vue aérienne du port de Tanger Med">
+          <div class="card-body">
+            <h2 class="card-title">Sécurisation de la navigation</h2>
+            <time class="card-date" datetime="2025-04-23">23 avril 2025</time>
+            <p class="card-text">Un enjeu stratégique pour l'économie maritime. La sécurisation de la navigation contribue à l'attractivité des ports et à la croissance de l'économie bleue...</p>
+          </div>
+        </a>
+      </article>
+    </div>
   </main>
 
   <!-- Footer -->
