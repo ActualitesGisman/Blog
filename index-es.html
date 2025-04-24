@@ -3,30 +3,73 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Noticias Gisman</title>
-   <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+  <title>Noticias de Gisman</title>
+  <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="assets/css/style.css">
+  <style>
+    .card {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      width: 250px;
+      flex-shrink: 0;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .card:hover {
+      transform: scale(1.03);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    }
+    .card img {
+      width: 100%;
+      height: 140px;
+      object-fit: cover;
+    }
+    .card-body {
+      padding: 1rem;
+    }
+    .card-title {
+      font-size: 0.95rem;
+      font-weight: bold;
+      color: #00529b;
+      margin-bottom: 0.5rem;
+    }
+    .card-text {
+      font-size: 0.85rem;
+      color: #333;
+      margin-bottom: 0.5rem;
+    }
+    .card-date {
+      font-size: 0.75rem;
+      color: #999;
+    }
+    .card-wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1.5rem;
+    }
+  </style>
 </head>
 <body>
-  <!-- Top bar: Logo left, languages right -->
-  <div class="header-top" style="display: flex; justify-content: space-between; align-items: center; padding: 1rem; background: white;">
+  <div style="display: flex; justify-content: space-between; align-items: center; padding: 1rem; background: white;">
     <a href="https://www.gisman.fr">
       <img src="assets/gisman_logo.jpg" alt="Logo Gisman" style="height: 60px;">
     </a>
-    <div class="lang-switcher" style="display: flex; gap: 1rem;">
-      <a href="index-en.html"><img src="assets/English.jpg" alt="Inglés" style="height: 30px;"></a>
-      <a href="index.html"><img src="assets/Français.jpg" alt="Francés" style="height: 30px;"></a>
+    <div style="display: flex; gap: 1rem;">
+      <a href="index-en.html"><img src="assets/English.jpg" alt="English" style="height: 30px;"></a>
+      <a href="index.html"><img src="assets/Français.jpg" alt="Français" style="height: 30px;"></a>
       <a href="index-es.html"><img src="assets/Español.jpg" alt="Español" style="height: 30px;"></a>
     </div>
   </div>
 
-  <!-- Banner with title -->
-  <div class="banner" style="position: relative; text-align: center;">
-    <img src="assets/Actualités_bannière.jpg" alt="Banner de Noticias" style="width: 100%; height: auto; display: block;">
-    <h1 style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); color: white; font-size: 3rem; font-weight: bold;">NOTICIAS</h1>
+  <div style="position: relative; text-align: center;">
+    <img src="assets/Actualités_bannière.jpg" alt="Banner de noticias" style="width: 100%; height: auto; display: block;">
+    <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; display: flex; justify-content: center; align-items: center;">
+      <h1 style="color: white; font-size: 3rem; font-weight: bold;">NOTICIAS</h1>
+    </div>
   </div>
 
-  <!-- Intro text -->
   <section style="max-width: 1000px; margin: 2rem auto; padding: 0 1rem; text-align: center;">
     <h2 style="font-size: 1.5rem; font-weight: bold; margin-bottom: 1rem;">Bienvenido al sitio de noticias de Gisman.</h2>
     <p style="font-size: 1rem; color: #333; line-height: 1.6;">
@@ -36,21 +79,23 @@
     </p>
   </section>
 
-  <main class="articles-grid" style="padding: 2rem;">
-    <!-- AUTO-INSERT-ARTICLES -->
-    <article class="blog-post">
-      <a href="es/securisation-navigation.html">
-        <img src="assets/tanger_med_port_entrance.png" alt="Vista aérea del puerto Tanger Med">
-        <h2>Seguridad de la navegación</h2>
-        <time datetime="2025-04-23">23 abril 2025</time>
-        <p>Un tema estratégico para la economía marítima. La seguridad de la navegación fortalece la competitividad portuaria y el desarrollo de la economía azul...</p>
-      </a>
-    </article>
+  <main style="padding: 2rem;">
+    <div class="card-wrapper">
+      <article class="card">
+        <a href="es/navegacion-segura.html">
+          <img src="assets/tanger_med_port_entrance.png" alt="Vista aérea del puerto de Tánger Med">
+          <div class="card-body">
+            <h2 class="card-title">Garantizar la navegación: un eje estratégico para la economía azul</h2>
+            <p class="card-text">Tánger Med se posiciona como un referente regional gracias a la modernización de sus ayudas a la navegación.</p>
+            <div class="card-date">10 de abril de 2025</div>
+          </div>
+        </a>
+      </article>
+    </div>
   </main>
 
-  <footer class="footer" style="text-align: center; padding: 1rem; background: #f5f5f5;">
+  <footer style="text-align: center; padding: 1rem; background: #f5f5f5;">
     <p>&copy; 2025 Gisman - Todos los derechos reservados</p>
   </footer>
 </body>
 </html>
-
