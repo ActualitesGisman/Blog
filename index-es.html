@@ -1,1 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Noticias Gisman</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <!-- Top bar: Logo left, languages right -->
+  <div class="header-top" style="display: flex; justify-content: space-between; align-items: center; padding: 1rem; background: white;">
+    <a href="https://www.gisman.fr">
+      <img src="assets/img/gisman_logo.jpg" alt="Logo Gisman" style="height: 60px;">
+    </a>
+    <div class="lang-switcher" style="display: flex; gap: 1rem;">
+      <a href="index-en.html"><img src="assets/img/English.jpg" alt="Inglés" style="height: 30px;"></a>
+      <a href="index.html"><img src="assets/img/Français.jpg" alt="Francés" style="height: 30px;"></a>
+      <a href="index-es.html"><img src="assets/img/Español.jpg" alt="Español" style="height: 30px;"></a>
+    </div>
+  </div>
+
+  <!-- Banner with title -->
+  <div class="banner" style="position: relative; text-align: center;">
+    <img src="assets/img/Actualités_bannière.png" alt="Banner de Noticias" style="width: 100%; height: auto; display: block;">
+    <h1 style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); color: white; font-size: 3rem; font-weight: bold;">NOTICIAS</h1>
+  </div>
+
+  <!-- Intro text -->
+  <section style="max-width: 1000px; margin: 2rem auto; padding: 0 1rem; text-align: center;">
+    <h2 style="font-size: 1.5rem; font-weight: bold; margin-bottom: 1rem;">Bienvenido al sitio de noticias de Gisman.</h2>
+    <p style="font-size: 1rem; color: #333; line-height: 1.6;">
+      Este blog pone de relieve los proyectos, las innovaciones y los acontecimientos que marcan la vida de nuestra empresa.
+      A través de artículos publicados con regularidad, descubra nuestras realizaciones en Francia y a nivel internacional,
+      manténgase al tanto de nuestras novedades y conozca nuestros compromisos junto a nuestros clientes, los puertos y las autoridades marítimas.
+    </p>
+  </section>
+
+  <main class="articles-grid" style="padding: 2rem;">
+    <!-- AUTO-INSERT-ARTICLES -->
+    <article class="blog-post">
+      <a href="es/securisation-navigation.html">
+        <img src="assets/img/article-1.jpg" alt="Vista aérea del puerto Tanger Med">
+        <h2>Seguridad de la navegación</h2>
+        <time datetime="2025-04-23">23 abril 2025</time>
+        <p>Un tema estratégico para la economía marítima. La seguridad de la navegación fortalece la competitividad portuaria y el desarrollo de la economía azul...</p>
+      </a>
+    </article>
+  </main>
+
+  <footer class="footer" style="text-align: center; padding: 1rem; background: #f5f5f5;">
+    <p>&copy; 2025 Gisman - Todos los derechos reservados</p>
+  </footer>
+</body>
+</html>
 
