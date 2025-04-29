@@ -1,1 +1,119 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exxon Valdez (1989) : un tournant pour la sécurité maritime</title>
+  <meta name="description" content="Le naufrage de l'Exxon Valdez une catastrophe ayant renforcé la signalisation maritime.">
+  <link rel="icon" href="../assets/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 2rem auto;
+      max-width: 900px;
+      padding: 1rem;
+      color: #222;
+    }
+    header img {
+      height: 50px;
+    }
+    header {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      margin-bottom: 2rem;
+    }
+    h1 {
+      color: #00529b;
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+    h2 {
+      color: #003d66;
+      margin-top: 2rem;
+    }
+    footer {
+      margin-top: 3rem;
+      text-align: center;
+      font-size: 0.9rem;
+      color: #999;
+    }
+    .back-button {
+      margin-top: 2rem;
+      display: inline-block;
+      background: #00529b;
+      color: white;
+      padding: 0.6rem 1.2rem;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+    .article-image {
+      width: 100%;
+      margin-bottom: 2rem;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <a href="https://www.gisman.fr"><img src="../assets/gisman_logo.jpg" alt="Retour site Gisman"></a>
+  </header>
+
+  <h1>Exxon Valdez (1989) : une catastrophe humaine… et un tournant pour la sécurité maritime</h1>
+  <img class="article-image" src="../assets/exxon_valdez_1989.jpg" alt="Le pétrolier Exxon Valdez échoué en Alaska">
+
+  <h2>Un drame aux origines humaines</h2>
+  <p>Le 24 mars 1989, à 00h04, le pétrolier Exxon Valdez s’échoue sur le récif de Bligh, dans le détroit du Prince William, en Alaska. En quelques heures, entre 38 500 et 40 000 tonnes de pétrole brut se répandent en mer, polluant environ 800 km de côtes directement, et jusqu’à 2 000 km en incluant les zones insulaires.</p>
+
+  <p>Ce désastre, l’un des plus graves aux États-Unis, a provoqué la mort d’environ 300 000 oiseaux marins, la contamination durable des écosystèmes et une pollution résiduelle détectée encore plusieurs décennies après l’accident.</p>
+
+  <p>L’enquête du National Transportation Safety Board (NTSB) est sans appel : fatigue du personnel, erreur de l’officier de quart, surveillance défaillante, et surtout, absence du commandant Joseph Hazelwood à la passerelle au moment critique. Le naufrage est donc lié à un enchaînement de décisions humaines et de dysfonctionnements organisationnels aux conséquences dramatiques.</p>
+
+  <h2>Des réformes réglementaires historiques</h2>
+  <p>L’onde de choc mondiale de l’affaire Exxon Valdez a cependant provoqué une réaction réglementaire massive :</p>
+  <ul>
+    <li>Interdiction progressive des pétroliers à simple coque dans les eaux américaines (Oil Pollution Act, 1990), puis au niveau international (post-1996) ;</li>
+    <li>Généralisation des doubles coques pour les tankers transportant des hydrocarbures ;</li>
+    <li>Mise en œuvre accélérée de systèmes électroniques obligatoires tels que l’AIS (Automatic Identification System) et le GPS différentiel.</li>
+  </ul>
+
+  <h2>Et la signalisation maritime dans tout ça ?</h2>
+  <p>La catastrophe du Exxon Valdez a eu un effet d’accélérateur sur l’application renforcée de la Convention SOLAS — notamment son chapitre V, règlement 13, qui impose aux États membres de mettre en œuvre des aides à la navigation conformes aux recommandations de l’IALA. L’accident a agi comme un catalyseur mondial pour un cadre normatif plus rigoureux.</p>
+
+  <p>Ce drame a aussi permis de redéfinir le rôle de la signalisation maritime :</p>
+  <ul>
+    <li>comme complément essentiel aux technologies numériques ;</li>
+    <li>comme soutien visuel fiable en cas de panne ou d’interruption des systèmes électroniques ;</li>
+    <li>comme référence universelle partagée par tous les marins, indépendamment de leur technologie embarquée.</li>
+  </ul>
+
+  <h2>D’autres marées noires, d’autres leçons</h2>
+  <p>Dix ans plus tard, en 1999, l’Erika coule au large de la Bretagne, puis le Prestige en 2002 au large de l’Espagne. Mais les réponses apportées après Exxon Valdez ont permis :</p>
+  <ul>
+    <li>un temps de réaction plus rapide ;</li>
+    <li>une meilleure coordination internationale ;</li>
+    <li>des infrastructures de surveillance et de signalisation plus modernes et résilientes.</li>
+  </ul>
+
+  <h2>Gisman : acteur engagé pour une navigation plus sûre</h2>
+  <p>Chez Gisman, nous accompagnons cette évolution par des solutions de signalisation maritime conformes aux recommandations de l’AISM (IALA), incluant :</p>
+  <ul>
+    <li>Bouées lumineuses et balisages autonomes ;</li>
+    <li>Feux à haute visibilité, réflecteurs radar ;</li>
+    <li>Solutions connectées et monitoring AIS virtuels.</li>
+  </ul>
+  <p>Nos équipements renforcent la sécurité des routes maritimes et réduisent les risques d’incident, même dans les environnements les plus exigeants.</p>
+
+  <h2>En conclusion</h2>
+  <p>L’histoire du Exxon Valdez reste un rappel douloureux : la mer ne laisse aucune place à l’impréparation. Depuis cet événement, la signalisation, les technologies et les règles ont profondément évolué.</p>
+
+  <a class="back-button" href="../index.html">← Retour au blog</a>
+
+  <footer>
+    &copy; 2025 Gisman - Tous droits réservés
+  </footer>
+</body>
+</html>
 
