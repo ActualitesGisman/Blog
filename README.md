@@ -3,8 +3,6 @@
 Bienvenue sur le dépôt GitHub officiel du **blog multilingue de Gisman**, spécialiste international des aides à la navigation maritime. Ce blog présente des articles techniques, réglementaires et historiques sur la signalisation maritime, l’économie bleue, le balisage portuaire et les technologies AtoN.
 
 ## 📁 Structure du projet
-
-```bash
 ├── fr/                     # Articles en français
 ├── en/                     # Articles en anglais
 ├── es/                     # Articles en espagnol
@@ -13,11 +11,14 @@ Bienvenue sur le dépôt GitHub officiel du **blog multilingue de Gisman**, spé
 │   ├── en_template.html
 │   └── es_template.html
 ├── assets/                 # Images, feuilles de styles, favicon
-│   ├── css/
-│   ├── img/
-│   └── favicon.ico
-├── index.html              # Page d'accueil du blog (fr par défaut)
-└── index-en.html / index-es.html
+├── _data/                  # fichier .json pour possible automatisation future
+├── index.html              # Page d'accueil du blog (français par défaut)
+├── index-en.html           # Page d'accueil en anglais
+├── index-es.html           # Page d'accueil en espagnol
+├── sitemap.xml             # Plan du site pour le référencement
+├── robots.txt              # Directives pour les robots d'indexation
+└── LICENSE                 # Licence MIT
+
 🔍 Fonctionnalités
 ✅ Contenu multilingue (français, anglais, espagnol)
 
@@ -42,7 +43,7 @@ Commit & push : le blog est automatiquement mis à jour sur https://actualitesgi
 👉 https://actualitesgisman.github.io/Blog
 
 🤝 Contribuer
-Ce projet est public mais édité exclusivement par Gisman. Les contributions externes ne sont pas ouvertes pour le moment.
+Ce projet est public mais édité exclusivement par Gisman. Les contributions externes ne sont pas ouvertes.
 
 Cependant, si vous constatez une erreur ou souhaitez suggérer une amélioration (contenu, accessibilité, performance), vous pouvez :
 
