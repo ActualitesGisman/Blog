@@ -48,6 +48,7 @@ Commit & push : le blog est automatiquement mis à jour sur https://actualitesgi
 👉 https://actualitesgisman.github.io/Blog
 
 🤝 Contribuer
+
 Ce projet est public mais édité exclusivement par Gisman. Les contributions externes ne sont pas ouvertes.
 
 Cependant, si vous constatez une erreur ou souhaitez suggérer une amélioration (contenu, accessibilité, performance), vous pouvez :
