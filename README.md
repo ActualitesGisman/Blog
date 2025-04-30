@@ -9,9 +9,9 @@ Bienvenue sur le dépôt GitHub officiel du **blog multilingue de Gisman**, spé
 ├── en/                     # Articles en anglais
 ├── es/                     # Articles en espagnol
 ├── templates/              # Templates HTML multilingues
-│   ├── fr_template.html
-│   ├── en_template.html
-│   └── es_template.html
+│   ├── article-en.html
+│   ├── article-es.html
+│   └── article-fr.html
 ├── assets/                 # Images, feuilles de styles, favicon
 ├── _data/                  # fichier .json pour possible automatisation future
 ├── index.html              # Page d'accueil du blog (français par défaut)
