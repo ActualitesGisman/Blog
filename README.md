@@ -24,6 +24,7 @@ Bienvenue sur le dépôt GitHub officiel du **blog multilingue de Gisman**, spé
 
 
 🔍 Fonctionnalités
+
 ✅ Contenu multilingue (français, anglais, espagnol)
 
 ✅ Optimisation SEO (balises canonical, hreflang, Open Graph, Twitter Card, etc.)
