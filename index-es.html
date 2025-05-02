@@ -115,7 +115,7 @@
 
   <main style="padding: 2rem;">
     <div class="card-wrapper">
-      <article class="card">
+      <article class="card" data-date="2025-04-10">
         <a href="es/navegacion-segura.html">
           <img src="assets/tanger_med_port_entrance.png" alt="Vista aérea del puerto de Tánger Med">
           <div class="card-body">
@@ -125,7 +125,7 @@
           </div>
         </a>
       </article>
-      <article class="card">
+      <article class="card" data-date="2025-04-29">
   <a href="es/exxonvaldez-catástrofe-marítima.html">
     <img src="assets/exxon_valdez_1989.jpg" alt="El petrolero Exxon Valdez encallado en Alaska">
     <div class="card-body">
@@ -142,5 +142,22 @@
   <footer style="text-align: center; padding: 1rem; background: #f5f5f5;">
     <p>&copy; 2025 Gisman - Todos los derechos reservados</p>
   </footer>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const wrapper = document.querySelector(".card-wrapper");
+    const articles = Array.from(wrapper.children);
+
+    articles.sort((a, b) => {
+      const dateA = new Date(a.getAttribute("data-date"));
+      const dateB = new Date(b.getAttribute("data-date"));
+      return dateB - dateA;
+    });
+
+    articles.forEach(article => wrapper.appendChild(article));
+  });
+</script>
+
+  
 </body>
 </html>
