@@ -114,9 +114,9 @@
 
   <main style="padding: 2rem;">
     <div class="card-wrapper">
-      <article class="card">
+      <article class="card" data-date="2025-04-10">
         <a href="en/safe-navigation.html">
-          <img src="assets/tanger_med_port_entrance.png" alt="Aerial view of Tanger Med port">
+          <img src="assets/tanger_med_port_entrance.png" alt="view of Tanger Med port">
           <div class="card-body">
             <h2 class="card-title">Navigation Safety: A Strategic Pillar of Blue Economy</h2>
             <p class="card-text">Tanger Med sets the benchmark in maritime safety through continued modernization of its navigation aids.</p>
@@ -124,7 +124,7 @@
           </div>
         </a>
       </article>
-      <article class="card">
+      <article class="card" data-date="2025-04-29">
   <a href="en/exxonvaldez-maritime-disaster.html">
     <img src="assets/exxon_valdez_1989.jpg" alt="Exxon Valdez oil spill disaster">
     <div class="card-body">
@@ -140,5 +140,22 @@
   <footer style="text-align: center; padding: 1rem; background: #f5f5f5;">
     <p>&copy; 2025 Gisman - All rights reserved</p>
   </footer>
+
+  <script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const wrapper = document.querySelector(".card-wrapper");
+    const articles = Array.from(wrapper.children);
+
+    articles.sort((a, b) => {
+      const dateA = new Date(a.getAttribute("data-date"));
+      const dateB = new Date(b.getAttribute("data-date"));
+      return dateB - dateA;
+    });
+
+    articles.forEach(article => wrapper.appendChild(article));
+  });
+</script>
+
+  
 </body>
 </html>
