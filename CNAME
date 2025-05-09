@@ -1,4 +1,1 @@
-echo "actualites.gisman.fr" > CNAME
-git add CNAME
-git commit -m "Ajout du fichier CNAME pour domaine personnalisé"
-git push origin main
+actualites.gisman.fr
