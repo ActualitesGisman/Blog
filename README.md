@@ -45,7 +45,7 @@ Copier le contenu de la page HTML de chaque template (article-en.html, article-e
 
 Insérer dans {{content}} le contenu de l'article livré en HTML dans chaque page article.
 
-Remplacer les variables du <head> (ex : {{title}}, {{slug}}, {{meta-description}}) manuellement. Ces variables sont livrés avec l'article.
+Remplacer les variables du head (ex : {{title}}, {{slug}}, {{meta-description}}) manuellement. Ces variables sont livrés avec l'article.
 
 Sauvegarder les articles finalisés.
 
