@@ -36,13 +36,22 @@ Bienvenue sur le dépôt GitHub officiel du **blog multilingue de Gisman**, spé
 ✅ Hébergement GitHub Pages (statique)
 
 🛠️ Utilisation recommandée
-Rédiger un article en HTML et l'insérer dans le <body> du template correspondant (fr_template.html, en_template.html, es_template.html).
 
-Remplacer les variables du <head> (ex : {{title}}, {{slug}}, {{meta-description}}) manuellement ou via un script de génération.
+Charger les images d'illustration dans le dossier "assets".
 
-Sauvegarder l'article finalisé dans le dossier fr/, en/ ou es/ selon la langue.
+Créer ensuite un article dans les dossiers "en", "es" et "fr".
 
-Commit & push : le blog est automatiquement mis à jour sur https://actualitesgisman.github.io/Blog
+Copier le contenu de la page HTML de chaque template (article-en.html, article-es.html, article-fr.html) et le coller dans les articles nouvellement créés dans les dossiers "en", "es" et "fr" correspondants.
+
+Insérer dans {{content}} le contenu de l'article livré en HTML dans chaque page article.
+
+Remplacer les variables du <head> (ex : {{title}}, {{slug}}, {{meta-description}}) manuellement. Ces variables sont livrés avec l'article.
+
+Sauvegarder les articles finalisés.
+
+Ajouter enfin l'article dans la section "card-wrapper" de chaque pages index.html, index-es.html et index-fr.html.
+
+Commit & push : le blog est mis à jour sur https://actualitesgisman.github.io/Blog
 
 🌍 Lien public
 👉 https://actualitesgisman.github.io/Blog
