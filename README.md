@@ -49,7 +49,7 @@ Remplacer les variables du head (ex : {{title}}, {{slug}}, {{meta-description}})
 
 Sauvegarder les articles finalisés.
 
-Ajouter enfin l'article dans la section "card-wrapper" de chaque pages index.html, index-es.html et index-en.html.
+Ajouter enfin l'article dans la section "card-wrapper" des pages index.html, index-es.html et index-en.html.
 
 Commit & push : le blog est mis à jour sur https://actualitesgisman.github.io/Blog
 
